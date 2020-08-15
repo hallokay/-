@@ -1,0 +1,143 @@
+
+
+/* 너비 1220px */
+
+@media(max-width: 1220px){
+    .container{
+        width: 100%;
+    }
+    .header_menu{
+        margin-right: 15px;
+    }
+
+    #contents .container {
+        border: 0;
+       
+    }
+    .square a {
+        width: 24%;
+    }
+    .square a:nth-child(5n){
+        display: none;
+    }
+}
+
+/* 너비 1024px */
+
+@media(max-width: 1024px){
+    .square a {
+        width: 32%;
+    }
+    .square a:nth-child(5){
+        display: block;
+    }
+
+}
+
+/* 너비 960px */
+
+@media(max-width: 960px){
+    .nav_menu {
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .nav_menu > div ol {
+        column-count: 3;
+    }
+    .nav_menu > div:last-child li{
+        column-span: none
+    }
+    .content_right {
+        grid-column: 1/4;
+        border-top: 1px solid #dbdbdb;
+        display: flex;
+    }
+    .content_right .col7 {
+        border-bottom: 0;
+    }
+    .content_right .col8{
+        border-right: 1px solid #dbdbdb;
+        border-left: 1px solid #dbdbdb;
+        border-bottom: 0;
+    }
+    .contents {
+        grid-template-columns: 250px 1fr;
+    }
+    .content_center {
+        border-right: 0;
+    }
+}
+
+/* 너비 768px */
+
+@media(max-width: 768px) {
+    .header {
+        height: auto;
+    }
+    .header_tit, .header_icon, .tit_btn {
+        display: none;
+    }
+
+    .nav_menu > div ol {
+        column-count: 2;
+    }
+    .contents {
+        display: flex;
+        flex-direction: column;
+    }
+    .content_center {
+        border-top: 1px solid #dbdbdb;
+        border-left: 0;
+
+    }
+
+    .col1 {
+        padding: 0;
+        border: 0;
+    }
+    .col1 .col_tit, .col1 .col_desc, .menu i{
+        display: none;
+    }
+    .menu ul {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    .menu li {
+        text-align: center;
+        border-right: 1px solid #dbdbdb;
+        box-sizing: border-box;
+    }
+    .menu li:nth-child(3n) {
+        border: 0;
+    }
+    .menu a:hover {
+        box-shadow: none;
+        background: rgba(36,130,174,.9)
+    }
+    
+    .slider figcaption {
+        padding: 10px;
+    }
+
+    .slider figcaption em {
+        font-size: 18px;
+    }
+    .slider figcaption span{
+        font-size: 14px;
+    }
+    .content_right .col8 {
+        border-right: 0;
+    }
+    .content_right .col9 {
+        display: none;
+    }
+
+    .square a {
+        width: 49%;
+    }
+    .square a:nth-child(5){
+        display: none;
+    }
+}
+
+
